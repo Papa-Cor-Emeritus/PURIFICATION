@@ -1,0 +1,437 @@
+:root {
+    --variant-color: rgba(255, 255, 255, .1);
+    --variant-degrade: radial-gradient(#9de6e6 20%, #025252);
+    --variant-degrade-1: radial-gradient(#dbb66e, #bd7002, #8b0000);
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* font-family: 'Chewy', cursive; */
+    /* font-family: 'Fredoka One', cursive; */
+    /* font-family: 'Patrick Hand', cursive; */
+    /* font-family: 'Righteous', cursive; */
+    /* font-family: 'Russo One', sans-serif; */  /* no usamos */
+}
+
+body {
+    background-color: #000;
+}
+
+
+
+/* IMAGENES DEL HEADER  */
+.logos--header-container {
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    padding: 10px;
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logos--subcontainer {
+    width: 12%;
+ 
+}
+
+.logos--subcontainer-purification {
+    width: 45%;
+    margin-top: auto;
+}
+
+
+/* EL NAV */
+nav {
+    width: 100%;
+    min-height: 120px;
+    padding: 20px 10px;
+    margin: 150px 0;
+    background-image: var(--variant-degrade);
+    box-shadow: 0 0 20px 15px #025252;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    width: 240px;
+    text-align: center;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-size: 22px;
+    font-weight: 1000;
+    font-family: 'Fredoka One', cursive;
+    transition: all .3s;
+}
+
+nav ul li a {
+    color: #008080;
+    transition: all .5s;   
+}
+
+nav ul li a:hover {
+    color: #025252;   
+    background-image: linear-gradient(to left, transparent, rgba(2, 82, 82, .5));
+}
+
+nav ul li:hover {
+    transform: scale(1.3);
+}
+
+nav ul li:active {
+    outline: 2px solid #008080;
+    box-shadow: 0 0 15px 2px #025252;
+}
+
+
+
+/* PORTADA PRINCIPAL DEL ALBUM */
+.portada {
+    width: 100%;
+    background-color: var(--variant-color);
+    margin: 250px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.portada--papa,
+.portada--cd {
+    width: 60%;
+    margin: 150px auto;
+    border-radius: 20px solid #fff;
+}
+.portada--papa img,
+.portada--cd img {
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+
+.portada-album,
+.portada-p {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.portada-album img {
+    border-radius: 3%;
+    border: 3px solid #fff;
+}
+
+.portada-p p {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    padding-bottom: 100px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.portada-p a {
+    color: #008080;
+}
+
+
+.portada-p a:hover {
+    color: #8b0000;
+}
+
+
+/* LISTA DE CANCIONES */
+.logo--canciones {
+    width: 100%;
+    padding: 20px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo--canciones-h2 {
+    width: 40%;
+    color: #000;
+    font-size: 50px;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #025252, #008080,#9de6e6);
+    border-radius: 30px;
+}
+
+.logo--canciones-img {
+    width: 80%;
+}
+
+.caja--canciones {
+    width: 100%;
+    margin: 100px 0;
+    padding: 20px 0;
+}
+
+.caja--canciones li {
+    margin: 300px 0;
+    text-align: center;
+}
+
+.caja--canciones li h4 {
+    width: 500px;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 40px;
+    font-family: 'Fredoka One', cursive;
+    background-image: var(--variant-degrade-1);
+    box-shadow: 0 0 20px 10px #8b0000;
+    border-radius: 30px;
+    margin: auto;
+}
+
+.container--img-song {
+    width: 45%;
+    margin: 30px auto;
+}
+
+iframe {
+    box-shadow: 0 0 20px 10px #8b0000;
+}
+
+/* HERMANAS DEL CLERO */
+.hermanas {
+    width: 100%;
+    margin: 300px 0;
+    text-align: center;
+}
+
+.hermanas p {
+    width: 45%;
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    margin: 20px auto;
+    padding: 5px;
+    color: #fff;
+    border: 2px solid #008080;
+    border-radius: 30px;
+}
+
+.hermanas img {
+    width: 60%;
+}
+
+
+
+/* LINK A REDES  */
+footer {
+    width: 100%;
+    height: 200px;
+    margin: 500px 0;
+    text-align: center;
+}
+
+footer h5 {
+    color: #fff;
+    font-family: 'Patrick Hand', cursive;
+}
+footer a img {
+    width: 8%;
+    margin: 20px;
+}
+
+/* [title] {
+    color: #008080;
+} */
+
+
+@media only screen and (max-width: 600px) {
+    
+    nav {
+        padding: 10px 5px;
+    }
+
+    nav ul li {
+        transition: all .1s;
+    }
+    
+    nav ul li a {
+        transition: all .1s;   
+    }
+    
+    nav ul li a:hover {
+        color: #025252;   
+        background-image: linear-gradient(to left, transparent, rgba(2, 82, 82, .5));
+    }
+    
+    nav ul li:hover {
+        transform: scale(1.1);
+    }
+    
+    nav ul li:active {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .portada-album,
+    .portada-p,
+    .portada--papa,
+    .portada--cd {
+    width: 90%;
+    }
+
+
+    .portada-p p {
+        font-size: 10px;
+    }
+
+    .logo--canciones-h2 {
+        font-size: 25px;
+    }
+
+    .logo--canciones-img {
+        width: 100%;
+    }
+    
+
+    .hermanas p {
+        font-size: 20px;
+    }
+    
+
+    footer a img {
+        width: 8%;
+        margin: 10px;
+    }
+
+    footer h5 {
+        font-size: 8px;
+    }
+
+    .portada-album,
+    .portada-p {
+        width: 80%;
+    }
+
+    nav ul li {
+        font-size: 20px;
+    }
+
+    .caja--canciones li h4 {
+        width: 90%;
+        font-size: 20px;
+
+    }
+
+    .logo--canciones-h2 {
+        width: 60%;
+        font-size: 15px;
+    }
+
+    .container--img-song {
+        width: 70%;
+    }
+
+    .caja--canciones iframe {
+    width: 300px;
+    height: 300px
+    }
+
+    .portada iframe {
+        width: 320px; 
+        height: 215px;
+    }
+
+}
+
+
+@media only screen and (max-width: 320px) {
+    
+    nav ul li {
+        font-size: 15px;
+    }
+
+    nav ul li {
+        transition: all .1s;
+    }
+    
+    nav ul li a {
+        transition: all .1s;   
+    }
+    
+    nav ul li a:hover {
+        color: #025252;   
+        background-image: linear-gradient(to left, transparent, rgba(2, 82, 82, .5));
+    }
+    
+    nav ul li:hover {
+        transform: scale(1.1);
+    }
+    
+    nav ul li:active {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .portada-album,
+    .portada-p,
+    .portada--papa,
+    .portada--cd {
+    width: 90%;
+    }
+
+
+    .portada-p p {
+        font-size: 10px;
+    }
+    
+
+    .logo--canciones-h2 {
+        width: 60%;
+        font-size: 15px;
+    }
+
+    .container--img-song {
+        width: 70%;
+    }
+
+
+
+    .caja--canciones iframe {
+        width: 90%;
+    }
+    
+    .caja--canciones li h4 {
+        width: 90%;
+        font-size: 20px;
+
+    }
+
+    .hermanas p {
+        font-size: 10px;
+    }
+
+
+    footer a img {
+        width: 8%;
+        margin: 10px;
+    }
+
+    footer h5 {
+        font-size: 8px;
+    }
+
+
+    .portada iframe {
+        width: 300px; 
+        height: 160px;
+    }
+
+
+}
